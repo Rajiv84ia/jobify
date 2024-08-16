@@ -1,0 +1,13 @@
+version: "1"
+services:
+  frontend:
+    image: rajiv84iya/jobify-frotend 
+    ports: 
+      - "5000:3000"
+    depends_on:
+      - backend
+  backend:
+    image: rajiv84iya/jobify-backend
+    ports:
+      - "8090:8000"
+      
