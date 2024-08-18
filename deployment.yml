@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: frnotenddeployment
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  matchLabels:
+    app: frnotend
+  template:
+    metadata:
+      name: frontendpod
+    selector:
+      labels: 
+        app: frnotend
+    spec:
+      containers:
+      - name: frontendContainer
+        images: rajiv84iya/jobify-frontend
+        ports:
+        - containerPort: 3000
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
