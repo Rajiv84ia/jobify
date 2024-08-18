@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: backend_deployment
+  name: backenddeployment
 spec:
   replicas: 1
   strategy:
