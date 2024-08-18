@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: backend_deployment
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  matchLabels:
+    app: backend
+  template:
+    metadata:
+      name: backendPod
+    selector:
+      labels:  
+        app: backend
+    spec:
+      containers:
+      - name: backendcontainer
+        image: rajiv84iya/jobify-backend
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
+...
