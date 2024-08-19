@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: frontendContainer
-        images: rajiv84iya/jobify-frontend
+        image: rajiv84iya/jobify-frontend
         ports:
         - containerPort: 3000
         resources:
