@@ -4,10 +4,11 @@ kind: Service
 metadata:
   name: backendsvc
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: backend
   ports:
     - port: 80
       targetPort: 8080
+      nodePort: 5000
 ...
