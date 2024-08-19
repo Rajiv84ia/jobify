@@ -20,7 +20,7 @@ spec:
       - name: backendcontainer
         image: rajiv84iya/jobify-backend
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
         resources:
           limits:
             cpu: 500m
