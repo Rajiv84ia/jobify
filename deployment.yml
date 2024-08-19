@@ -7,14 +7,14 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
-  matchLabels:
-    app: frnotend
+  selector:
+    matchLabels:
+      app: frontend
   template:
     metadata:
       name: frontendpod
-    selector:
       labels: 
-        app: frnotend
+        app: frontend
     spec:
       containers:
       - name: frontendContainer
