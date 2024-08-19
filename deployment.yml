@@ -17,7 +17,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontendContainer
+      - name: frontendcontainer
         image: rajiv84iya/jobify-frontend
         ports:
         - containerPort: 3000
