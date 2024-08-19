@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   name: frontenddeployment
+  namespace: jobifyns
 spec:
   replicas: 1
   strategy:
