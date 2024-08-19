@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: backendsvc
+  namespace: jobifyns
 spec:
   type: NodePort
   selector:
