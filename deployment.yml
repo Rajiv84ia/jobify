@@ -7,12 +7,12 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
-  matchLabels:
-    app: backend
+  selector:
+    matchLabels:
+      app: backend
   template:
     metadata:
       name: backendPod
-    selector:
       labels:  
         app: backend
     spec:
