@@ -4,10 +4,11 @@ kind: Service
 metadata:
   name: frontendsvc
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: frontend
   ports:
   - port: 80
     targetPort: 3000
+    nodePort: 9000
 ...
