@@ -1,5 +1,5 @@
 ---
-apiVersion: hpa/v1
+apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpafrontend
@@ -10,6 +10,6 @@ spec:
     kind: Deployment
     name: frontenddeployment
   minReplicas: 1
-  maxReplicas: 10
+  maxReplicas: 100
   targetCPUUtilizationPercentage: 50
 ...
