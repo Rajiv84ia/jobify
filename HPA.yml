@@ -3,6 +3,7 @@ apiVersion: autoscaling/v1
 kint: HorizontalPodAutoscaler
 metadata:
   name: hpa
+  namespace: jobifyns
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
