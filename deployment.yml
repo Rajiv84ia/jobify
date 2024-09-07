@@ -13,7 +13,6 @@ spec:
       app: backend
   template:
     metadata:
-      name: backendPod
       labels:  
         app: backend
     spec:
