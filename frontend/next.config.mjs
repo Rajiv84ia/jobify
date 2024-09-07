@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env:{
-        API:'http://65.1.91.24:30002/api/v1'
+        API:'http://3.110.175.148:30002/api/v1'
     },
     images:{
         domains:['res.cloudinary.com']
